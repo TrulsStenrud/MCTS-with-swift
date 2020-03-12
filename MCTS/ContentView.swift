@@ -9,17 +9,59 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var clickCount : Int = 0
-    @State var output : String = "0"
+    @State var output : String = ""
+    
+    
+    @State var selectedGameCount: String = "10"
+    @State var gameSize: String = "10"
+    @State var verbose: Bool = false
+    @State var rolloutCount: String = "500"
+    @State var startPlayer: String = "1"
+    @State var playNim: Bool = true
+    
+    
     var body: some View {
         VStack {
-            Text("\(clickCount)")
+            HStack{
+                Text("Hom many games?")
+                
+                TextField("Number of games?", text: $selectedGameCount).textFieldStyle(RoundedBorderTextFieldStyle())
+            }
+            
+            HStack{
+                Text("Game size?")
+                
+                TextField("Game size?", text: $gameSize).textFieldStyle(RoundedBorderTextFieldStyle())
+            }
+            
+            
+            Toggle(isOn: $verbose) {
+                Text("Verbose?")
+            }
+            
+            HStack{
+                Text("RolloutCount?")
+                
+                TextField("Rollout count?", text: $rolloutCount).textFieldStyle(RoundedBorderTextFieldStyle())
+            }
+            
+            Toggle(isOn: $playNim) {
+                Text("Play Nim?")
+            }
+            
+            
+            HStack{
+                Text("Who starts?")
+                
+                TextField("Starting player", text: $startPlayer).textFieldStyle(RoundedBorderTextFieldStyle())
+            }
+            
             Button(action: {
-                self.clickCount += 1
                 self.doStuff()
             }){
                 Text("Click me")
             }
+            
             ScrollView {
                 HStack{
                     Text("\(output)")
@@ -27,7 +69,7 @@ struct ContentView: View {
                 }
             }
                 
-            .background(Color.red)
+            // .background(Color.red)
             
             
         }
@@ -43,8 +85,8 @@ struct ContentView: View {
             
         }
         
-            self.output += "First! \n"
-
+        self.output += "First! \n"
+        
     }
 }
 

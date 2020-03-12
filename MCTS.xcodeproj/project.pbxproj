@@ -13,6 +13,7 @@
 		FB131957241A23E600D064FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB131956241A23E600D064FB /* Assets.xcassets */; };
 		FB13195A241A23E600D064FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB131959241A23E600D064FB /* Preview Assets.xcassets */; };
 		FB13195D241A23E600D064FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB13195B241A23E600D064FB /* LaunchScreen.storyboard */; };
+		FB131967241A4CAC00D064FB /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB131966241A4CAC00D064FB /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		FB131959241A23E600D064FB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FB13195C241A23E600D064FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB13195E241A23E600D064FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB131964241A4BE200D064FB /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = MyPlayground.playground; path = "../../../../Library/Autosave Information/MyPlayground.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FB131966241A4CAC00D064FB /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,8 @@
 		FB13194F241A23E500D064FB /* MCTS */ = {
 			isa = PBXGroup;
 			children = (
+				FB131965241A4C9300D064FB /* Games */,
+				FB131964241A4BE200D064FB /* MyPlayground.playground */,
 				FB131950241A23E500D064FB /* AppDelegate.swift */,
 				FB131952241A23E500D064FB /* SceneDelegate.swift */,
 				FB131954241A23E500D064FB /* ContentView.swift */,
@@ -73,6 +78,14 @@
 				FB131959241A23E600D064FB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FB131965241A4C9300D064FB /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				FB131966241A4CAC00D064FB /* File.swift */,
+			);
+			path = Games;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB131951241A23E500D064FB /* AppDelegate.swift in Sources */,
+				FB131967241A4CAC00D064FB /* File.swift in Sources */,
 				FB131953241A23E500D064FB /* SceneDelegate.swift in Sources */,
 				FB131955241A23E500D064FB /* ContentView.swift in Sources */,
 			);
