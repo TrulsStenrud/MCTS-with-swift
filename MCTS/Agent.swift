@@ -22,14 +22,6 @@ class Agent<S:Game>
     func chooseAction(state: S) -> S.A {
         let actions = state.getActions()
         
-        let vis = actions.map{visitCount[Pair(state, $0), default: 0]}
-        let win = actions.map{winCount[Pair(state, $0), default: 0]}
-        
-        
-        if (state as! NIM).leftovers == 6{
-            var g = 3
-        }
-        
         for action in actions{
             for _ in 0..<rollouts{
                 let reward = doRollout(state, action, myTurn: true)
@@ -40,13 +32,7 @@ class Agent<S:Game>
                 
             }
         }
-        
-        let vis2 = actions.map{visitCount[Pair(state, $0), default: 0]}
-        let win2 = actions.map{winCount[Pair(state, $0), default: 0]}
-        
-        if (state as! NIM).leftovers == 6{
-            var g = 3
-        }
+    
         return actions.max{
             let pair0 = Pair(state, $0)
             let pair1 = Pair(state, $1)

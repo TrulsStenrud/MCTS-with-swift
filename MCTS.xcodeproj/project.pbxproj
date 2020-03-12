@@ -19,6 +19,8 @@
 		FBF0A1BB241A687800AF670B /* NIM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF0A1BA241A687800AF670B /* NIM.swift */; };
 		FBF0A1BE241A68AA00AF670B /* NIMAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF0A1BD241A68AA00AF670B /* NIMAction.swift */; };
 		FBF0A1C0241A6E5B00AF670B /* Agent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF0A1BF241A6E5B00AF670B /* Agent.swift */; };
+		FBF0A1C2241A9DB800AF670B /* Ledge.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF0A1C1241A9DB800AF670B /* Ledge.swift */; };
+		FBF0A1C4241A9DC200AF670B /* LedgeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF0A1C3241A9DC200AF670B /* LedgeAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		FBF0A1BA241A687800AF670B /* NIM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIM.swift; sourceTree = "<group>"; };
 		FBF0A1BD241A68AA00AF670B /* NIMAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIMAction.swift; sourceTree = "<group>"; };
 		FBF0A1BF241A6E5B00AF670B /* Agent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agent.swift; sourceTree = "<group>"; };
+		FBF0A1C1241A9DB800AF670B /* Ledge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ledge.swift; sourceTree = "<group>"; };
+		FBF0A1C3241A9DC200AF670B /* LedgeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedgeAction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 				FBF0A1BC241A689500AF670B /* Actions */,
 				FB131966241A4CAC00D064FB /* Game.swift */,
 				FBF0A1BA241A687800AF670B /* NIM.swift */,
+				FBF0A1C1241A9DB800AF670B /* Ledge.swift */,
 			);
 			path = Games;
 			sourceTree = "<group>";
@@ -107,6 +112,7 @@
 			children = (
 				FBF0A1B6241A628900AF670B /* Action.swift */,
 				FBF0A1BD241A68AA00AF670B /* NIMAction.swift */,
+				FBF0A1C3241A9DC200AF670B /* LedgeAction.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -187,9 +193,11 @@
 				FBF0A1BB241A687800AF670B /* NIM.swift in Sources */,
 				FBF0A1C0241A6E5B00AF670B /* Agent.swift in Sources */,
 				FB131953241A23E500D064FB /* SceneDelegate.swift in Sources */,
+				FBF0A1C2241A9DB800AF670B /* Ledge.swift in Sources */,
 				FBF0A1BE241A68AA00AF670B /* NIMAction.swift in Sources */,
 				FBF0A1B7241A628900AF670B /* Action.swift in Sources */,
 				FB131955241A23E500D064FB /* ContentView.swift in Sources */,
+				FBF0A1C4241A9DC200AF670B /* LedgeAction.swift in Sources */,
 				FBF0A1B9241A653C00AF670B /* Pair.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
