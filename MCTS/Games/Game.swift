@@ -8,8 +8,14 @@
 
 import Foundation
 
-protocol Game : Hashable{
-    func getActions() -> [Int]
+protocol Game : Hashable
+{
+    associatedtype A: Action
+    associatedtype S: Game
+    
+    func getActions() -> [A]
+    
+    func doAction(action: A) -> S
 }
 
 
