@@ -32,7 +32,6 @@
 		FB131959241A23E600D064FB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FB13195C241A23E600D064FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB13195E241A23E600D064FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FB131964241A4BE200D064FB /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = MyPlayground.playground; path = "../../../../Library/Autosave Information/MyPlayground.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FB131966241A4CAC00D064FB /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		FBF0A1B6241A628900AF670B /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		FBF0A1B8241A653C00AF670B /* Pair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pair.swift; sourceTree = "<group>"; };
@@ -75,7 +74,6 @@
 			children = (
 				FB131965241A4C9300D064FB /* Games */,
 				FBF0A1B8241A653C00AF670B /* Pair.swift */,
-				FB131964241A4BE200D064FB /* MyPlayground.playground */,
 				FB131950241A23E500D064FB /* AppDelegate.swift */,
 				FB131952241A23E500D064FB /* SceneDelegate.swift */,
 				FB131954241A23E500D064FB /* ContentView.swift */,

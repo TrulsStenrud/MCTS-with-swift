@@ -45,7 +45,6 @@ struct ContentView: View {
     @State var playNim: Bool = true
     @State var progress: CGFloat = 0
     @State var running: Bool = false
-    var strengths = ["Mild", "Medium", "Mature"]
     
     @State private var selectedStrength = 0
     
@@ -96,7 +95,7 @@ struct ContentView: View {
             }
             
             Button(action: {
-                self.doStuff()
+                self.startGamePLay()
             }){
                 Text("Click me")
             }.disabled(running)
@@ -113,7 +112,7 @@ struct ContentView: View {
         }
     }
     
-    func doStuff(){
+    func startGamePLay(){
         output = ""
         
         let G = Int(selectedGameCount)!
@@ -136,8 +135,7 @@ struct ContentView: View {
     
     func playGame<g:Game>(_ initState: g, _ G: Int, _ rCount: Int, _ verbose: Bool, _ p: Int) {
         let agent = Agent(rollouts: rCount, type(of: initState))
-        let agent2 = Agent(rollouts: rCount, type(of: initState))
-        let players = [agent, agent2]
+        let players = [agent, agent]
         
         var winCount = 0
         self.running = true
