@@ -96,7 +96,7 @@ struct ContentView: View {
             }
             
             Button(action: {
-                self.doStuff()
+                self.timeJustForFun()
             }){
                 Text("Click me")
             }.disabled(running)
@@ -111,6 +111,104 @@ struct ContentView: View {
                 }
             }
         }
+    }
+    
+    func timeJustForFun(){
+        DispatchQueue.global(qos: .userInitiated).async{
+            let n = 2_000_000_000
+            var start = DispatchTime.now() // <<<<<<<<<< Start time
+            let r = self.justForFun(n: n)
+            var end = DispatchTime.now()   // <<<<<<<<<<   end time
+            
+            var nanoTime = end.uptimeNanoseconds - start.uptimeNanoseconds // <<<<< Difference in nano seconds (UInt64)
+            var timeInterval = Double(nanoTime) / 1_000_000_000 // Technically could overflow for long running tests
+            
+            self.printLine("Primes took \(timeInterval) seconds")
+            
+            //self.printLine(r.description)
+            
+            self.progress = 0
+            let new_n: Int64 = Int64(n)*Int64(n)
+            start = DispatchTime.now() // <<<<<<<<<< Start time
+            
+            for i in (new_n-100 ... new_n).reversed(){
+                var factors = self.factorize(i, primes: r)
+                
+                self.progress+=1
+            }
+            
+            
+             end = DispatchTime.now()   // <<<<<<<<<<   end time
+            
+             nanoTime = end.uptimeNanoseconds - start.uptimeNanoseconds // <<<<< Difference in nano seconds (UInt64)
+             timeInterval = Double(nanoTime) / 1_000_000_000 // Technically could overflow for long running tests
+            
+            self.printLine("Factorizing took \(timeInterval) seconds")
+            // self.printLine(r.description)
+            
+            
+        }
+    }
+    
+    func factorize(_ n: Int64, primes: [Int]) -> [Int64]{
+        var n = n
+        var result: [Int64] = []
+        
+        for p in primes{
+            let p = Int64(p)
+            while(n % p == 0){
+                n/=p
+                result.append(p)
+            }
+            
+            if n == 1{
+                return result
+            }
+        }
+        
+        result.append(n)
+        return result
+    }
+    
+    func isPrime(_ n: Int64, _ primes: [Int]) -> Bool{
+        for p in primes{
+            if n % Int64(p) == 0{
+                return false
+            }
+        }
+        return true
+    }
+    
+    func justForFun(n: Int) -> [Int]{
+        let n = n+1
+        
+        var numbers = Array(repeating: true, count: n/2)
+        numbers[0] = false
+        
+        let max = Int(sqrt(Float(n)))
+        
+        for i in stride(from: 3, through: max, by: 2){
+            if(numbers[i / 2]){
+                var current = 3*i
+                
+                while(current < n){
+                    numbers[current/2] = false
+                    
+                    current += 2*i
+                }
+            }
+        }
+        
+        var result: [Int] = []
+        result.append(2)
+        for i in 1 ..< numbers.count{
+            if(numbers[i])
+            {
+                result.append(i*2+1)
+            }
+        }
+        
+        return result
     }
     
     func doStuff(){
