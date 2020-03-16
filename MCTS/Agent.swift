@@ -24,15 +24,12 @@ class Agent<S:Game>
         
         for action in actions{
             for _ in 0..<rollouts{
-                let reward = doRollout(state, action, myTurn: true)
-                if reward == 1{
+                if doRollout(state, action, myTurn: true) == 1{
                     winCount[Pair(state, action), default: 0] += 1
                 }
-                
-                
             }
         }
-    
+        
         return actions.max{
             let pair0 = Pair(state, $0)
             let pair1 = Pair(state, $1)
@@ -44,6 +41,7 @@ class Agent<S:Game>
     
     func doRollout(_ state: S, _ action: S.A, myTurn: Bool) -> Int {
         let pair = Pair(state , action)
+        
         visitCount[pair, default: 0] += 1
         
         let nextState = state.doAction(action: action) as! S
@@ -53,7 +51,7 @@ class Agent<S:Game>
         if newActions.count == 0{
             return myTurn ? 1 : -1
         }
-        
+
         let myTurn = !myTurn
         let nextAction = newActions.randomElement()!
         let reward = doRollout(nextState, nextAction, myTurn: myTurn)

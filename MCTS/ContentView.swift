@@ -35,10 +35,9 @@ struct ProgressBar: View {
 struct ContentView: View {
     @State var output : String = ""
     
-    
     @State var selectedGameCount: String = "10"
     @State var gameSize: String = "10"
-    @State var ledgeBoard: String = "0 1 0 1 2 0 1 0"
+    @State var ledgeBoard: String = "0 2 0 1 0 1 1 0 0 1"
     @State var K: String = "3"
     @State var verbose: Bool = false
     @State var rolloutCount: String = "500"
@@ -46,6 +45,9 @@ struct ContentView: View {
     @State var playNim: Bool = true
     @State var progress: CGFloat = 0
     @State var running: Bool = false
+    var strengths = ["Mild", "Medium", "Mature"]
+    
+    @State private var selectedStrength = 0
     
     var body: some View {
         VStack {
@@ -108,10 +110,6 @@ struct ContentView: View {
                     Spacer()
                 }
             }
-            
-            // .background(Color.red)
-            
-            
         }
     }
     
@@ -157,7 +155,7 @@ struct ContentView: View {
                     if self.verbose{
                         if let nim = state as? NIM{
                             let a = action as! NIMAction
-                            self.printLine("Player \(currPlayer) took \(a.n), Remaining \(nim.leftovers)")
+                            self.printLine("Player \(currPlayer) took \(a.n), Remaining \(nim.leftovers - a.n)")
                         }
                         else if let ledge = state as? Ledge{
                             self.printLine(ledge.board.description)
