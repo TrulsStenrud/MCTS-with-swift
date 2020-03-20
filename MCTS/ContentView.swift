@@ -181,8 +181,9 @@ struct ContentView: View {
     }
     
     func justForFun(n: Int) -> [Int]{
-        let n = n+1
+        self.progress = 0
         
+        let n = n+1
         var numbers = Array(repeating: true, count: n/2)
         numbers[0] = false
         
@@ -198,6 +199,8 @@ struct ContentView: View {
                     current += 2*i
                 }
             }
+            
+            self.progress = CGFloat(i*100/max)
         }
         
         var result: [Int] = []
