@@ -37,7 +37,7 @@ struct ContentView: View {
     
     @State var selectedGameCount: String = "10"
     @State var gameSize: String = "10"
-    @State var ledgeBoard: String = "0 2 0 1 0 1 1 0 0 1"
+    @State var ledgeBoard: String = "0 0 2 0 1"
     @State var K: String = "3"
     @State var verbose: Bool = false
     @State var rolloutCount: String = "500"
@@ -45,7 +45,6 @@ struct ContentView: View {
     @State var playNim: Bool = true
     @State var progress: CGFloat = 0
     @State var running: Bool = false
-    var strengths = ["Mild", "Medium", "Mature"]
     
     @State private var selectedStrength = 0
     
@@ -96,7 +95,9 @@ struct ContentView: View {
             }
             
             Button(action: {
+
                 self.timeJustForFun()
+
             }){
                 Text("Click me")
             }.disabled(running)
@@ -211,7 +212,7 @@ struct ContentView: View {
         return result
     }
     
-    func doStuff(){
+    func startGamePLay(){
         output = ""
         
         let G = Int(selectedGameCount)!
@@ -220,8 +221,6 @@ struct ContentView: View {
         let p = Int(startPlayer)!
         let k = Int(K)!
         
-        
-        //let initState: game = playNim ? NIM(size: L, K: k) : Ledge(board: self.ledgeBoard.split(separator: " ").map{Int($0.description)!})
         
         if playNim{
             playGame(NIM(size: L, K: k), G, rCount, verbose, p)
@@ -234,8 +233,7 @@ struct ContentView: View {
     
     func playGame<g:Game>(_ initState: g, _ G: Int, _ rCount: Int, _ verbose: Bool, _ p: Int) {
         let agent = Agent(rollouts: rCount, type(of: initState))
-        let agent2 = Agent(rollouts: rCount, type(of: initState))
-        let players = [agent, agent2]
+        let players = [agent, agent]
         
         var winCount = 0
         self.running = true

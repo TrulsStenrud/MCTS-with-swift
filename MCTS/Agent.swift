@@ -16,11 +16,13 @@ class Agent<S:Game>
     
     init(rollouts: Int, _ type: S.Type){
         self.rollouts = rollouts
-        
     }
     
     func chooseAction(state: S) -> S.A {
         let actions = state.getActions()
+        
+        //var winCount1 = actions.map{winCount[Pair(state, $0)]}
+        //var visCount1 = actions.map{visitCount[Pair(state, $0)]}
         
         for action in actions{
             for _ in 0..<rollouts{
@@ -29,6 +31,9 @@ class Agent<S:Game>
                 }
             }
         }
+        
+        //var winCount2 = actions.map{winCount[Pair(state, $0), default: 0]}
+        //var visCount2 = actions.map{visitCount[Pair(state, $0)]}
         
         return actions.max{
             let pair0 = Pair(state, $0)
