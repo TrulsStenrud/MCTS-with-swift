@@ -35,6 +35,10 @@ class Ledge : Game{
         
         if board[0] != 0{
             actions.append(LedgeAction(start: 0, stop: 0))
+            if board[0] == 2{
+                return actions
+            }
+            
         }
         
         var coinToMove: Int = -1

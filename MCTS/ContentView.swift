@@ -37,7 +37,7 @@ struct ContentView: View {
     
     @State var selectedGameCount: String = "10"
     @State var gameSize: String = "10"
-    @State var ledgeBoard: String = "0 2 0 1 0 1 1 0 0 1"
+    @State var ledgeBoard: String = "0 0 2 0 1"
     @State var K: String = "3"
     @State var verbose: Bool = false
     @State var rolloutCount: String = "500"
@@ -121,8 +121,6 @@ struct ContentView: View {
         let p = Int(startPlayer)!
         let k = Int(K)!
         
-        
-        //let initState: game = playNim ? NIM(size: L, K: k) : Ledge(board: self.ledgeBoard.split(separator: " ").map{Int($0.description)!})
         
         if playNim{
             playGame(NIM(size: L, K: k), G, rCount, verbose, p)

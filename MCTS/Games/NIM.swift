@@ -27,6 +27,13 @@ class NIM : Game{
             return actions
         }
         
+        /* not sure why this doesnt work
+         if leftovers <= K && leftovers != 0{
+            actions = [NIMAction(n: leftovers)]
+            return actions!
+        }
+        */
+        
         actions = (1...K).filter{$0 <= leftovers}.map{NIMAction(n: $0)}
         return actions!
     }

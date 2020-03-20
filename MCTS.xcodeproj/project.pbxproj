@@ -14,6 +14,20 @@
 		FB13195A241A23E600D064FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB131959241A23E600D064FB /* Preview Assets.xcassets */; };
 		FB13195D241A23E600D064FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB13195B241A23E600D064FB /* LaunchScreen.storyboard */; };
 		FB131967241A4CAC00D064FB /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB131966241A4CAC00D064FB /* Game.swift */; };
+		FBDACCBC242571AA007DAF75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDACCBB242571AA007DAF75 /* AppDelegate.swift */; };
+		FBDACCBE242571AA007DAF75 /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDACCBD242571AA007DAF75 /* ContentView2.swift */; };
+		FBDACCC0242571AE007DAF75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDACCBF242571AE007DAF75 /* Assets.xcassets */; };
+		FBDACCC3242571AE007DAF75 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDACCC2242571AE007DAF75 /* Preview Assets.xcassets */; };
+		FBDACCC6242571AE007DAF75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBDACCC4242571AE007DAF75 /* Main.storyboard */; };
+		FBDACCCC24257309007DAF75 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB131954241A23E500D064FB /* ContentView.swift */; };
+		FBDACCCD2425733C007DAF75 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF0A1B6241A628900AF670B /* Action.swift */; };
+		FBDACCCE2425733C007DAF75 /* NIMAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF0A1BD241A68AA00AF670B /* NIMAction.swift */; };
+		FBDACCCF2425733C007DAF75 /* LedgeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF0A1C3241A9DC200AF670B /* LedgeAction.swift */; };
+		FBDACCD02425733C007DAF75 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB131966241A4CAC00D064FB /* Game.swift */; };
+		FBDACCD12425733C007DAF75 /* NIM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF0A1BA241A687800AF670B /* NIM.swift */; };
+		FBDACCD22425733C007DAF75 /* Ledge.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF0A1C1241A9DB800AF670B /* Ledge.swift */; };
+		FBDACCD32425733C007DAF75 /* Agent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF0A1BF241A6E5B00AF670B /* Agent.swift */; };
+		FBDACCD42425733C007DAF75 /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF0A1B8241A653C00AF670B /* Pair.swift */; };
 		FBF0A1B7241A628900AF670B /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF0A1B6241A628900AF670B /* Action.swift */; };
 		FBF0A1B9241A653C00AF670B /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF0A1B8241A653C00AF670B /* Pair.swift */; };
 		FBF0A1BB241A687800AF670B /* NIM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF0A1BA241A687800AF670B /* NIM.swift */; };
@@ -33,6 +47,14 @@
 		FB13195C241A23E600D064FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB13195E241A23E600D064FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB131966241A4CAC00D064FB /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		FBDACCB9242571AA007DAF75 /* MCTS-mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MCTS-mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBDACCBB242571AA007DAF75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FBDACCBD242571AA007DAF75 /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
+		FBDACCBF242571AE007DAF75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBDACCC2242571AE007DAF75 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FBDACCC5242571AE007DAF75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBDACCC7242571AE007DAF75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBDACCC8242571AE007DAF75 /* MCTS_mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MCTS_mac.entitlements; sourceTree = "<group>"; };
 		FBF0A1B6241A628900AF670B /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		FBF0A1B8241A653C00AF670B /* Pair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pair.swift; sourceTree = "<group>"; };
 		FBF0A1BA241A687800AF670B /* NIM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIM.swift; sourceTree = "<group>"; };
@@ -50,6 +72,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FBDACCB6242571AA007DAF75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -57,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				FB13194F241A23E500D064FB /* MCTS */,
+				FBDACCBA242571AA007DAF75 /* MCTS-mac */,
 				FB13194E241A23E500D064FB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				FB13194D241A23E500D064FB /* MCTS.app */,
+				FBDACCB9242571AA007DAF75 /* MCTS-mac.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				FB131965241A4C9300D064FB /* Games */,
+				FBF0A1BF241A6E5B00AF670B /* Agent.swift */,
 				FBF0A1B8241A653C00AF670B /* Pair.swift */,
 				FB131950241A23E500D064FB /* AppDelegate.swift */,
 				FB131952241A23E500D064FB /* SceneDelegate.swift */,
@@ -81,7 +113,6 @@
 				FB13195B241A23E600D064FB /* LaunchScreen.storyboard */,
 				FB13195E241A23E600D064FB /* Info.plist */,
 				FB131958241A23E600D064FB /* Preview Content */,
-				FBF0A1BF241A6E5B00AF670B /* Agent.swift */,
 			);
 			path = MCTS;
 			sourceTree = "<group>";
@@ -103,6 +134,28 @@
 				FBF0A1C1241A9DB800AF670B /* Ledge.swift */,
 			);
 			path = Games;
+			sourceTree = "<group>";
+		};
+		FBDACCBA242571AA007DAF75 /* MCTS-mac */ = {
+			isa = PBXGroup;
+			children = (
+				FBDACCBB242571AA007DAF75 /* AppDelegate.swift */,
+				FBDACCBD242571AA007DAF75 /* ContentView2.swift */,
+				FBDACCBF242571AE007DAF75 /* Assets.xcassets */,
+				FBDACCC4242571AE007DAF75 /* Main.storyboard */,
+				FBDACCC7242571AE007DAF75 /* Info.plist */,
+				FBDACCC8242571AE007DAF75 /* MCTS_mac.entitlements */,
+				FBDACCC1242571AE007DAF75 /* Preview Content */,
+			);
+			path = "MCTS-mac";
+			sourceTree = "<group>";
+		};
+		FBDACCC1242571AE007DAF75 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FBDACCC2242571AE007DAF75 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		FBF0A1BC241A689500AF670B /* Actions */ = {
@@ -135,6 +188,23 @@
 			productReference = FB13194D241A23E500D064FB /* MCTS.app */;
 			productType = "com.apple.product-type.application";
 		};
+		FBDACCB8242571AA007DAF75 /* MCTS-mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBDACCCB242571AE007DAF75 /* Build configuration list for PBXNativeTarget "MCTS-mac" */;
+			buildPhases = (
+				FBDACCB5242571AA007DAF75 /* Sources */,
+				FBDACCB6242571AA007DAF75 /* Frameworks */,
+				FBDACCB7242571AA007DAF75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MCTS-mac";
+			productName = "MCTS-mac";
+			productReference = FBDACCB9242571AA007DAF75 /* MCTS-mac.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -146,6 +216,9 @@
 				ORGANIZATIONNAME = "Truls Stenrud";
 				TargetAttributes = {
 					FB13194C241A23E500D064FB = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					FBDACCB8242571AA007DAF75 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
@@ -164,6 +237,7 @@
 			projectRoot = "";
 			targets = (
 				FB13194C241A23E500D064FB /* MCTS */,
+				FBDACCB8242571AA007DAF75 /* MCTS-mac */,
 			);
 		};
 /* End PBXProject section */
@@ -176,6 +250,16 @@
 				FB13195D241A23E600D064FB /* LaunchScreen.storyboard in Resources */,
 				FB13195A241A23E600D064FB /* Preview Assets.xcassets in Resources */,
 				FB131957241A23E600D064FB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBDACCB7242571AA007DAF75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBDACCC6242571AE007DAF75 /* Main.storyboard in Resources */,
+				FBDACCC3242571AE007DAF75 /* Preview Assets.xcassets in Resources */,
+				FBDACCC0242571AE007DAF75 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +284,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FBDACCB5242571AA007DAF75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBDACCD12425733C007DAF75 /* NIM.swift in Sources */,
+				FBDACCD32425733C007DAF75 /* Agent.swift in Sources */,
+				FBDACCBE242571AA007DAF75 /* ContentView2.swift in Sources */,
+				FBDACCCF2425733C007DAF75 /* LedgeAction.swift in Sources */,
+				FBDACCD02425733C007DAF75 /* Game.swift in Sources */,
+				FBDACCD42425733C007DAF75 /* Pair.swift in Sources */,
+				FBDACCCE2425733C007DAF75 /* NIMAction.swift in Sources */,
+				FBDACCCD2425733C007DAF75 /* Action.swift in Sources */,
+				FBDACCBC242571AA007DAF75 /* AppDelegate.swift in Sources */,
+				FBDACCD22425733C007DAF75 /* Ledge.swift in Sources */,
+				FBDACCCC24257309007DAF75 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -209,6 +311,14 @@
 				FB13195C241A23E600D064FB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FBDACCC4242571AE007DAF75 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBDACCC5242571AE007DAF75 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -368,6 +478,54 @@
 			};
 			name = Release;
 		};
+		FBDACCC9242571AE007DAF75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "MCTS-mac/MCTS_mac.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"MCTS-mac/Preview Content\"";
+				DEVELOPMENT_TEAM = 5X35PQK5MN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "MCTS-mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "Stenrud.MCTS-mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FBDACCCA242571AE007DAF75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "MCTS-mac/MCTS_mac.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"MCTS-mac/Preview Content\"";
+				DEVELOPMENT_TEAM = 5X35PQK5MN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "MCTS-mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "Stenrud.MCTS-mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -385,6 +543,15 @@
 			buildConfigurations = (
 				FB131962241A23E600D064FB /* Debug */,
 				FB131963241A23E600D064FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBDACCCB242571AE007DAF75 /* Build configuration list for PBXNativeTarget "MCTS-mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBDACCC9242571AE007DAF75 /* Debug */,
+				FBDACCCA242571AE007DAF75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
